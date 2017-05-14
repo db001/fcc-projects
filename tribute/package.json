@@ -11,5 +11,9 @@
     "url": "https://github.com/db001/fcc-projects/tree/master/fcc-projects/tribute"
   },
   "author": "DB",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
 }
