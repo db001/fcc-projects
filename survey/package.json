@@ -1,14 +1,14 @@
 {
-  "name": "tribute",
+  "name": "survey",
   "version": "1.0.0",
-  "description": "Tribute page to Nikola Tesla",
+  "description": "FreeCodeCamp Survey Form",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/db001/fcc-projects/tree/master/fcc-projects/tribute"
+    "url": "https://github.com/db001/fcc-projects/tree/master/fcc-projects/survey"
   },
   "author": "DB",
   "license": "ISC",
