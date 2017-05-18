@@ -1,21 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Baloo|Josefin+Slab");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background-color: #bcd6ff; }
+
 h1 {
   font-family: "Baloo", cursive; }
 
 p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-size: 20px; }
 
+a:visited {
+  color: black; }
+
+hr {
+  height: 5px;
+  border: 0;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 10px 10px -10px #ffffff inset;
+          box-shadow: 0 10px 10px -10px #ffffff inset;
+  width: 80%; }
+
+#inspired {
+  font-size: 12px; }
+
 #survey-form {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px; }
-  #survey-form label {
-    margin-top: 20px; }
+  margin: auto;
+  width: 90%;
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+  padding: 15px 0; }
   #survey-form input {
     margin-top: 5px;
     height: 25px;
     padding-left: 5px;
-    border-radius: 13px; }
+    border-radius: 5px; }
   #survey-form #age-label {
     width: 15%; }
   #survey-form button {
@@ -23,18 +52,34 @@ p {
     width: 100px; }
   #survey-form select {
     height: 30px;
-    border-radius: 13px; }
+    border-radius: 5px;
+    margin-top: 5px; }
 
 .input-group {
-  margin-top: 15px; }
+  margin: 10px 0; }
 
-.label-right-align {
+.label-align {
   text-align: right;
   display: inline-block;
-  width: 40%; }
+  width: 40%;
+  vertical-align: top;
+  padding-top: 10px; }
 
 .input-left-align {
   text-align: left;
   display: inline-block;
   width: 48%;
   margin-left: 10px; }
+
+input[type="textarea"] {
+  margin-left: 10px; }
+
+input[type="checkbox"], input[type="radio"] {
+  position: relative;
+  top: 5px;
+  margin-right: 10px; }
+
+button {
+  border-radius: 5px;
+  height: 50px;
+  margin: auto; }

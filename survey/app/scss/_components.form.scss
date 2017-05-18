@@ -1,11 +1,19 @@
-$border-rad: 13px;
+$border-rad: 5px;
+
+#inspired {
+  font-size: 15px;
+}
 
 #survey-form {
+  margin: auto;
+  width: 90%;
   font-family: $main-font;
-  font-size: 20px;
-  label {
-    margin-top: 20px;
-  }
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  padding: 15px 0;
+  
   input {
     margin-top: 5px;
     height: 25px;
@@ -22,17 +30,20 @@ $border-rad: 13px;
   select {
     height: 30px;
     border-radius: $border-rad;
+    margin-top: 5px;
   }
 }
 
 .input-group {
-  margin-top: 15px;
+  margin: 10px 0;
 }
 
-.label-right-align {
+.label-align {
   text-align: right;
   display: inline-block;
   width: 40%;
+  vertical-align: top;
+  padding-top: 10px;
 }
 
 .input-left-align {
@@ -41,11 +52,19 @@ $border-rad: 13px;
   width: 48%;
   margin-left: 10px;
 }
-.checkbox-list {
-  text-align: center;
+
+input[type="textarea"] {
+  margin-left: 10px;
 }
 
-.checkbox-group {
-  display: block;
-  padding: 10px 10px;
+input[type="checkbox"], input[type="radio"] {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+button {
+  border-radius: $border-rad;
+  height: 50px;
+  margin: auto;
 }
