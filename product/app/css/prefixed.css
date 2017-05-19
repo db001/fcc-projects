@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Josefin+Slab");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background-color: #bcd6ff; }
+
+h1 {
+  font-family: "Merriweather", serif; }
+
+p {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px; }
+
+a:visited {
+  color: black; }
+
+hr {
+  height: 5px;
+  border: 0;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 10px 10px -10px #ffffff inset;
+          box-shadow: 0 10px 10px -10px #ffffff inset;
+  width: 80%; }

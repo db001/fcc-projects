@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #666;
+  padding: 5px;
+  align-items: center;
+  img {
+    height: 75px;
+    width: auto;
+    padding: 15px;
+  }
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: $header-col;
+  }
+  a:visited {
+    color: $header-col;
+  }
+}
