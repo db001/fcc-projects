@@ -1,24 +1,44 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center;
-  background-color: #bcd6ff; }
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
 
-h1 {
-  font-family: "Merriweather", serif; }
+header {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #666;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header img {
+    height: 75px;
+    width: auto;
+    padding: 15px; }
 
-p {
-  font-family: "Josefin Slab", serif;
-  font-size: 20px; }
-
-a:visited {
-  color: black; }
-
-hr {
-  height: 5px;
-  border: 0;
-  border-color: #ffffff;
-  -webkit-box-shadow: 0 10px 10px -10px #ffffff inset;
-          box-shadow: 0 10px 10px -10px #ffffff inset;
-  width: 80%; }
+#nav-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px; }
+  #nav-bar a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff; }
+  #nav-bar a:visited {
+    color: #fff; }

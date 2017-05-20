@@ -1,15 +1,31 @@
+$head-height: 100px;
+
 header {
   width: 100%;
+  height: $head-height;
   margin: 0;
   display: flex;
   flex-direction: row;
   background-color: #666;
-  padding: 5px;
-  align-items: center;
   img {
     height: 75px;
     width: auto;
     padding: 15px;
+  }
+  h1 {
+    align-self: center;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 75%;
   }
 }
 
@@ -19,11 +35,22 @@ header {
   justify-content: flex-end;
   padding-right: 10px;
   a {
-    padding: 0 20px;
+    padding: 0 10px;
     text-decoration: none;
     color: $header-col;
+    height: $head-height;
+    font-size: 0.8rem;
   }
   a:visited {
     color: $header-col;
   }
+  a:hover {
+    background-color: $header-col;
+    color: #666;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+  }
 }
+

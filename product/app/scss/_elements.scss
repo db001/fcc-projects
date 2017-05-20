@@ -5,3 +5,12 @@ body {
   padding: 0; 
   font-family: $main-font;
 }
+section {
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (min-width: 800px) {
+  section {
+    width: 60%;
+  }
+}

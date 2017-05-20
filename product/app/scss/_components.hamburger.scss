@@ -1,0 +1,13 @@
+#hamburger {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  span {
+    width: 30px;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 3px;
+
+  }
+}
