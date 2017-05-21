@@ -7,8 +7,16 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif; }
 
+section {
+  width: 80%;
+  margin: auto; }
+
+@media only screen and (min-width: 800px) {
+  section {
+    width: 60%; } }
 header {
   width: 100%;
+  height: 100px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,16 +25,26 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #666;
-  padding: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  background-color: #666; }
   header img {
     height: 75px;
     width: auto;
     padding: 15px; }
+  header h1 {
+    -ms-flex-item-align: center;
+        align-self: center; }
 
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 75%; } }
 #nav-bar {
   width: 100%;
   display: -webkit-box;
@@ -37,8 +55,48 @@ header {
           justify-content: flex-end;
   padding-right: 10px; }
   #nav-bar a {
-    padding: 0 20px;
+    padding: 0 10px;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    height: 100px;
+    font-size: 0.8rem; }
   #nav-bar a:visited {
     color: #fff; }
+  #nav-bar a:hover {
+    background-color: #fff;
+    color: #666; }
+  #nav-bar .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+#hamburger {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #hamburger span {
+    width: 30px;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 3px; }
+
+.headline {
+  margin: auto;
+  text-align: center;
+  margin-top: 45px; }
+
+.main-img {
+  width: 75%; }
+
+@media only screen and (min-width: 800px) {
+  .main-img {
+    width: 50%; } }

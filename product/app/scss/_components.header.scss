@@ -1,4 +1,5 @@
 $head-height: 100px;
+$head-bg: #666;
 
 header {
   width: 100%;
@@ -6,7 +7,7 @@ header {
   margin: 0;
   display: flex;
   flex-direction: row;
-  background-color: #666;
+  background-color: $head-bg;;
   img {
     height: 75px;
     width: auto;
@@ -18,8 +19,8 @@ header {
 }
 
 .container {
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: auto;
   padding: 0;
   display: flex;
 }
@@ -29,17 +30,69 @@ header {
   }
 }
 
+
+
 #nav-bar {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
+  #link-col {
+    display: flex;
+    flex-direction: column;
+    background-color: $head-bg;    
+    z-index: 1;
+    #hamburger {
+      padding-top: $head-height / 3;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      span {
+        width: 30px;
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin: 3px;
+        transition: 0.5s;
+        transform: rotate(0deg);
+      }
+    }
+    #hamburger.open {
+      padding-top: $head-height / 3 + 16px;
+    }
+    #hamburger.open span:nth-child(1) {
+      transform: rotate(45deg);
+      margin-bottom: -2px;
+    }
+    #hamburger.open span:nth-child(2) {
+      display: none;
+    }
+    #hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      margin-top: -2px;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    #link-col {
+      flex-direction: row;
+      padding-top: 0;
+      height: $head-height;
+      #hamburger {
+        display: none;
+      }
+    }
+  }  
   a {
     padding: 0 10px;
+    margin-top: 10px;
     text-decoration: none;
     color: $header-col;
-    height: $head-height;
+    height: $head-height / 1.5;
     font-size: 0.8rem;
+  }
+  @media only screen and (min-width: 800px) {
+    height: $head-height;
+    margin-top: 0;
   }
   a:visited {
     color: $header-col;
