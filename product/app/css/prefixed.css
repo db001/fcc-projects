@@ -35,8 +35,8 @@ header {
         align-self: center; }
 
 .container {
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: auto;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,12 +54,69 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 10px; }
+  #nav-bar #link-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #666;
+    z-index: 1; }
+    #nav-bar #link-col #hamburger {
+      padding-top: 33.33333px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: auto; }
+      #nav-bar #link-col #hamburger span {
+        width: 30px;
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin: 3px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); }
+    #nav-bar #link-col #hamburger.open {
+      padding-top: 49.33333px; }
+    #nav-bar #link-col #hamburger.open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      margin-bottom: -2px; }
+    #nav-bar #link-col #hamburger.open span:nth-child(2) {
+      display: none; }
+    #nav-bar #link-col #hamburger.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      margin-top: -2px; }
+  @media only screen and (min-width: 800px) {
+    #nav-bar #link-col {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      padding-top: 0;
+      height: 100px; }
+      #nav-bar #link-col #hamburger {
+        display: none; } }
   #nav-bar a {
     padding: 0 10px;
+    margin-top: 10px;
     text-decoration: none;
     color: #fff;
-    height: 100px;
+    height: 66.66667px;
     font-size: 0.8rem; }
+  @media only screen and (min-width: 800px) {
+    #nav-bar {
+      height: 100px;
+      margin-top: 0; } }
   #nav-bar a:visited {
     color: #fff; }
   #nav-bar a:hover {
@@ -72,22 +129,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-
-#hamburger {
-  border: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  #hamburger span {
-    width: 30px;
-    color: #fff;
-    border: 2px solid white;
-    border-radius: 2px;
-    margin: 3px; }
 
 .headline {
   margin: auto;
