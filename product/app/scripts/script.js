@@ -8,7 +8,6 @@ function burgerTransform() {
   if (burger.classList.contains('open')) {
     links.style.display = 'flex';
     links.style.flexDirection = 'column';
-
   } else {
     links.style.display = 'none';    
   }

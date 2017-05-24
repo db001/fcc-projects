@@ -55,6 +55,7 @@ header {
           justify-content: flex-end;
   padding-right: 10px; }
   #nav-bar #link-col {
+    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -65,7 +66,7 @@ header {
     background-color: #666;
     z-index: 1; }
     #nav-bar #link-col #hamburger {
-      padding-top: 33.33333px;
+      border: 1px solid red;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -79,7 +80,7 @@ header {
         color: #fff;
         border: 2px solid white;
         border-radius: 2px;
-        margin: 3px;
+        margin: 3px 0;
         -webkit-transition: 0.3s;
         transition: 0.3s;
         -webkit-transform: rotate(0deg);
