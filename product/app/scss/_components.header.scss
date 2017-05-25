@@ -1,13 +1,12 @@
-$head-height: 100px;
-$head-bg: #666;
-
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
   height: $head-height;
-  margin: 0;
+  margin-top: 0;
   display: flex;
   flex-direction: row;
-  background-color: $head-bg;
+  background-color: $head-bg;  
   img {
     height: 75px;
     width: auto;

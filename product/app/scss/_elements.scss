@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  height: 100%;
   box-sizing: border-box;
   background-color: $background-col; 
   margin: 0;
   padding: 0; 
+  padding-top: $head-height;
   font-family: $main-font;
 }
 section {
