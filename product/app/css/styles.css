@@ -44,9 +44,8 @@ header {
   #nav-bar #link-col {
     display: flex;
     flex-direction: column;
-    background-color: #666;
     z-index: 1;
-    height: 100px; }
+    margin-top: 10px; }
     #nav-bar #link-col #hamburger {
       display: flex;
       flex-direction: column;
@@ -78,14 +77,18 @@ header {
       flex-direction: row;
       padding-top: 0;
       height: 100px;
-      display: flex; }
+      display: flex;
+      margin-top: 0; }
       #nav-bar #link-col #hamburger {
         display: none; }
-    #nav-bar #links {
-      display: flex; } }
+      #nav-bar #link-col #links, #nav-bar #link-col #links.open {
+        display: flex;
+        align-self: center; }
+        #nav-bar #link-col #links a, #nav-bar #link-col #links.open a {
+          padding: 0 20px;
+          font-size: 1rem; } }
   #nav-bar a {
     padding: 0 10px;
-    margin-top: 10px;
     text-decoration: none;
     color: #fff;
     height: 66.66667px;
@@ -96,10 +99,10 @@ header {
     background-color: #fff;
     color: #666; }
   #nav-bar .nav-link {
-    border: 1px solid red;
     display: flex;
     align-items: center;
-    height: 50px; }
+    height: 50px;
+    background-color: #666; }
 
 .headline {
   margin: auto;
@@ -112,5 +115,11 @@ header {
 @media only screen and (min-width: 800px) {
   .main-img {
     width: 50%; } }
+#video {
+  width: 90%;
+  margin: auto; }
+
+@media screen only and (min-width: 800px) {
+  width: 75%; }
 
 /*# sourceMappingURL=styles.css.map */

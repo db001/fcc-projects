@@ -38,9 +38,8 @@ header {
   #link-col {
     display: flex;
     flex-direction: column;
-    background-color: $head-bg;    
-    z-index: 1;
-    height: $head-height;    
+    z-index: 1; 
+    margin-top: 10px;
     #hamburger {
       display: flex;
       flex-direction: column;
@@ -71,7 +70,7 @@ header {
       margin-top: -2px;
     }
     #links {
-      display: none
+      display: none;
     }
   }
   @media only screen and (min-width: 800px) {
@@ -80,17 +79,22 @@ header {
       padding-top: 0;
       height: $head-height;
       display: flex;
+      margin-top: 0;
       #hamburger {
         display: none;
       }
-    }
-    #links {
-      display: flex;
-    }
+      #links, #links.open {
+        display: flex;
+        align-self: center;
+        a {
+          padding: 0 20px;
+          font-size: 1rem;
+        }
+      }
+    }   
   }  
   a {
     padding: 0 10px;
-    margin-top: 10px;
     text-decoration: none;
     color: $header-col;
     height: $head-height / 1.5;
@@ -108,10 +112,10 @@ header {
     color: #666;
   }
   .nav-link {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     height: 50px;
+    background-color: $head-bg;
   }
 }
 
