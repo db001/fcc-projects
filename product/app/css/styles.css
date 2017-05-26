@@ -21,6 +21,13 @@ section {
 @media only screen and (min-width: 800px) {
   section {
     width: 60%; } }
+h4:before {
+  display: block;
+  content: " ";
+  margin-top: -85px;
+  height: 115px;
+  visibility: hidden; }
+
 header {
   position: fixed;
   top: 0;
@@ -139,5 +146,25 @@ header {
     height: 30%;
     margin: 20px;
     align-self: center; }
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 90%; }
+  #form label {
+    margin: auto; }
+  #form input {
+    margin: auto;
+    margin-top: 15px; }
+  #form input[type="email"] {
+    width: 60%; }
+  #form input[type="submit"] {
+    width: 100px; }
+
+@media only screen and (min-width: 800px) {
+  #form {
+    width: 75%; } }
 
 /*# sourceMappingURL=styles.css.map */

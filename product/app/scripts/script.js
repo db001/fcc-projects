@@ -1,6 +1,5 @@
 const burger = document.getElementById('hamburger');
 const links = document.getElementById('links');
-const nav = document.getElementsByClassName('nav-link');
 
 function burgerTransform() {
   burger.classList.toggle('open');
@@ -21,6 +20,15 @@ function onResize() {
   }
 }
 
+burger.addEventListener('click', burgerTransform);
+window.addEventListener('resize', onResize);
+
+/*
+
+To do:  Fix this so it scrolls to the link rather than jumping
+
+const nav = document.getElementsByClassName('nav-link');
+
 function getTop() {
   const target = this.dataset.link;
   const scrollTarget = document.getElementById(target);
@@ -30,10 +38,8 @@ function getTop() {
   }, 1)  
 }
 
-burger.addEventListener('click', burgerTransform);
-window.addEventListener('resize', onResize);
-
 for (let i = 0; i < nav.length; i++) {
   nav[i].addEventListener('click', getTop);
 }
 
+*/

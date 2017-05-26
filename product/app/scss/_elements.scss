@@ -23,3 +23,10 @@ section {
     width: 60%;
   }
 }
+h4:before {
+  display: block;
+  content: " ";
+  margin-top: -$head-height + 15px;
+  height: $head-height + 15px;
+  visibility: hidden;
+}
