@@ -21,18 +21,40 @@
 
     <main id="main-doc">
 
-      <section class="main-section" id="section-id">
-        <h3>Section Header</h3>
-        <p>Paragraph</p>
-        <code>Code sample</code>
-        <p>Paragraph</p>
+      <section class="main-section" id="introduction">
+        <h3>Introduction</h3>
+        <p>Angular is a Javascript framework that extends HTML in order to make creating dynamic websites quicker and easier.  The latest version is Angular 4, and is smaller and faster than it's predecessors.  Whilst the original angular was written in plain JavaScript, the following iterations use TypeScript in order to support developer productivity with tooling.  However while starting out Angular code can be written plain JavaScript.</p>
+        <p>Angular is one of the components of the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" alt="" target="_blank">MEAN stack</a> but can be used with other libraries and all the features can be modified to suit the needs of the application being developed.</p>
       </section>
 
-      <section class="main-section" id="section-id">
-        <h3>Section Header</h3>
-        <p>Paragraph</p>
-        <code>Code sample</code>
-        <p>Paragraph</p>
+      <section class="main-section" id="things-to-know">
+        <h3>Thing you should know</h3>
+        <ul>
+          <li>Before starting Angular you should have a good working knowledge of HTML and JavaScript</li>
+          <li>An understanding of the Internet and the basics of web development</li>
+          <li>Previous experience of TypeScript isn't necessary to begin, but will be useful when developing more complex apps.</li>
+          <li>How to set up a development environment using Node and NPM</li>
+          <li>Knowledge of Git would be useful for following the tutorials on the <a href="angular.io" target="_blank" alt="">Angular main site</a>.</li>
+      </section>
+
+      <section class="main-section" id="basics">
+        <h3>The Basics</h3>
+        <p>Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.</p>
+        <p>The framework consists of several libraries, sone core and some optional</p>
+        <p>Angular applications are made up of HTML templates composed with components and services. A component is a combination of an HTML template and a component class that controls a portion of the screen.  These components contain Angularized markup. Application logic is added in services and and this all gets boxed up as a module.</p>
+        <p>Below is an example component that displays a simple string</p>
+        <pre><code>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `&#060h1&#062Hello {{name}}&#060/h1&#062`
+})
+
+export class AppComponent { name = 'Angular'; }
+        </code></pre>
+        <p>The <em>@component</em> is a <a href="https://angular.io/docs/ts/latest/glossary.html#!#decorator" alt="link to decorator definition">decorator</a> function that essentially describes how the HTML template and component clas work together.</p>
+        <p>The selector property tells Angular to display the component inside a custom <code>my-app</code> tag inside the HTML.
       </section>
       
       <section class="main-section" id="section-id">
