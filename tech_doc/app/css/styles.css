@@ -7,8 +7,7 @@ html {
 
 body {
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ddd;
   margin: 0;
   padding: 0;
@@ -28,28 +27,20 @@ header {
   width: 100%;
   height: 100px;
   margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   background-color: #666; }
   header img {
     height: 75px;
     width: auto;
     padding: 15px; }
   header h1 {
-    -ms-flex-item-align: center;
-        align-self: center; }
+    align-self: center; }
 
 .container {
   width: 90%;
   margin: auto;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 @media only screen and (min-width: 800px) {
@@ -57,79 +48,52 @@ header {
     width: 75%; } }
 #nav-bar {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding-right: 10px; }
   #nav-bar #link-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     z-index: 1;
     margin-top: 10px; }
     #nav-bar #link-col #hamburger {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      flex-direction: column;
       width: 90px;
       height: 50px;
       margin-top: 30px; }
       #nav-bar #link-col #hamburger span {
-        -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
         width: 30px;
         color: #fff;
         border: 2px solid white;
         border-radius: 2px;
         margin: 3px 0;
-        -webkit-transition: 0.3s;
         transition: 0.3s;
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg); }
+        transform: rotate(0deg); }
     #nav-bar #link-col #hamburger.open span:nth-child(1) {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
+      transform: rotate(45deg);
       margin-bottom: -2px;
       margin-top: 10px; }
     #nav-bar #link-col #hamburger.open span:nth-child(2) {
       display: none; }
     #nav-bar #link-col #hamburger.open span:nth-child(3) {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      transform: rotate(-45deg);
       margin-top: -2px; }
     #nav-bar #link-col #links {
       display: none; }
   @media only screen and (min-width: 800px) {
     #nav-bar #link-col {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      flex-direction: row;
       padding-top: 0;
       height: 100px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       margin-top: 0; }
       #nav-bar #link-col #hamburger {
         display: none; }
       #nav-bar #link-col #links, #nav-bar #link-col #links.open {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-item-align: center;
-            align-self: center; }
+        align-self: center; }
         #nav-bar #link-col #links a, #nav-bar #link-col #links.open a {
           padding: 0 20px;
           font-size: 1rem; } }
@@ -145,12 +109,8 @@ header {
     background-color: #fff;
     color: #666; }
   #nav-bar .nav-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     height: 50px;
     background-color: #666; }
 
@@ -172,16 +132,12 @@ header {
 @media screen only and (min-width: 800px) {
   width: 75%; }
 .img-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  flex-direction: row; }
   .img-container img {
     width: 30%;
     height: 30%;
     margin: 20px;
-    -ms-flex-item-align: center;
-        align-self: center; }
+    align-self: center; }
+
+/*# sourceMappingURL=styles.css.map */
