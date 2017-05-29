@@ -5,70 +5,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Raspberry Pi</title>
+    <title>Angular Technical Documents</title>
 
-    <meta name="description" content="FreeCodeCamp Product Landing Page">
+    <meta name="description" content="Angular 2 Technical Documentation">
     <meta name="author" content="DB">
 
     <link rel='stylesheet' type='text/css' href='app/css/styles.css'>
-
-    <script src="https://use.fontawesome.com/068c959bfc.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- website link wiggly-egg.surge.sh -->
-
   </head>
   <body>
-    <header id="header">
-      <div class="container">
-        <img src="https://www.raspberrypi.org/app/uploads/2012/03/raspberry-pi-logo.png" id="header-img">
-        <h3>Raspberry Pi</h3>
-        <nav id="nav-bar">          
-          <div id="link-col">
-            <div id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>            
-            </div>
-            <div id="links">
-              <a href="#" class="nav-link" data-link="what">What is it?</a>
-              <a href="#" class="nav-link" data-link="start">Getting Started</a>
-              <a href="#" class="nav-link" data-link="dist">Distributors</a>
-            </div>
-          </div> 
-        </nav>
-      </div>
-    </header>
 
-    <div class="headline">
-      <img src="https://wiki.openwrt.org/_media/media/raspberry_pi_foundation/rpi1bplus.png" class="main-img" alt="Raspberry Pi 3">
-    </div>
+    <main id="main-doc">
 
-    <section>
-      <h4 id="what">What is it?</h4>
-      <p>The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote the teaching of basic computer science in schools and in developing countries.</p>
-      <p>The latest version, the Raspberry Pi 3 comes with a 64-bit quad core ARM processor and 1GB of RAM.  It is also equipped with Wi-Fi, Bluetooth and USB boot capabilities.
-    </section>
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
 
-    <section>
-      <h4 id="start">Getting Started</h4>
-      <p>See the video for a brief introduction</p>
-      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/aR78uoNB-d4" frameborder="0" allowfullscreen></iframe>
-      <p>Many more tutorials and resources are available at <a href="https://www.raspberrypi.org/" target="_blank" alt="Raspberry Pi home page">RaspberryPi.org</a></p>
-    </section>
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+      
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+      
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
 
-    <section>
-      <h4 id="dist">Distributors</h4>
-      <div class="img-container">
-        <img src="https://yt3.ggpht.com/-yMj8PjHrar8/AAAAAAAAAAI/AAAAAAAAAAA/blGo-i_rd3c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="RS Online">
-        <img src="http://presspage-production-content.s3.amazonaws.com/templates/533/1564/logo_top.png" alt="Element 14">
-      </div>
-    </section>
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+
+    </main>
+
+    <p><ol>
+          <li> I can see a &#60main&#62 element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+          </li>
+    <li> Within the #main-doc ( &#60main&#62 ) element, I can see several &#60section&#62 elements, each with a class of "main-section". There should be a minimum of 5.
+    </li>
+    <li> The first element within each .main-section should be a &#60header&#62 element which contains text that describes the topic of that section.
+    </li>
+    <li> Each &#60section&#62 element with the class of "main-section" should also have an id that corresponds with the text of each &#60header&#62 contained within it. Any spaces should be replaced with underscores (e.g. The &#60section&#62 that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
+    </li>
+    <li> The .main-section elements should contain at least 10 &#60p&#62 elements total (not each).
+    </li>
+    <li> The .main-section elements should contain at least 5 &#60code&#62 elements total (not each).
+    </li>
+    <li> The .main-section elements should contain at least 5 &#60li&#62 items total (not each).
+    </li>
+    <li> I can see a &#60nav&#62 element with a corresponding id="navbar".
+    </li>
+    <li> The first element within the navbar should be a &#60header&#62 which contains text that describes the topic of the technical documentation.
+    </li>
+    <li> Additionally, the navbar should contain link (&#60a&#62) elements with the class of "nav-link". There should be one for every element with the class "main-section".
+    </li>
+    <li> Each element with the class of "nav-link" should contain text that corresponds to the &#60header&#62 text within each &#60section&#62 (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+    </li>
+    <li> When I click on a navbar element, the page should navigate to the corresponding section of the "main-doc" element (e.g. If I click on a "nav-link" element that contains the text "Hello world", the page navigates to a &#60section&#62 element that has that id and contains the corresponding &#60header&#62.
+      </li>
+    </p>
 
 
-  <script src="app/scripts/script.js"></script>
   </body>
 </html>
