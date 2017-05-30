@@ -4,22 +4,29 @@ html {
   margin: 0;
   padding: 0;
 }
-
 body {
   height: 100%;
   box-sizing: border-box;
   background-color: $background-col; 
   margin: 0;
   padding: 0; 
-  padding-top: $head-height;
   font-family: $main-font;
 }
-section {
-  width: 80%;
+main {
+  width: 90%;
   margin: auto;
 }
-@media only screen and (min-width: 800px) {
-  section {
-    width: 60%;
+pre, code {
+  border: 1px solid #666;
+  border-radius: 3px;  
+  background-color: #fff;
+  padding: 5px;
+}
+pre {
+  padding: 15px;
+  code {
+    border: none;
+    background-color: none;
+    padding: 0;
   }
 }
