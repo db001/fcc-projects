@@ -25,6 +25,7 @@
         <h3>Introduction</h3>
         <p>Angular is a Javascript framework that extends HTML in order to make creating dynamic websites quicker and easier.  The latest version is Angular 4, and is smaller and faster than it's predecessors.  Whilst the original angular was written in plain JavaScript, the following iterations use TypeScript in order to support developer productivity with tooling.  However while starting out Angular code can be written plain JavaScript.</p>
         <p>Angular is one of the components of the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" alt="" target="_blank">MEAN stack</a> but can be used with other libraries and all the features can be modified to suit the needs of the application being developed.</p>
+        <p>This document is small sample from <a href="https://www.angular.io" alt="Angular Homepage" target="_blank">angular.io</a>, for a more detailed look at Angular, it's recommended to go there.
       </section>
 
       <section class="main-section" id="things-to-know">
@@ -34,7 +35,25 @@
           <li>An understanding of the Internet and the basics of web development</li>
           <li>Previous experience of TypeScript isn't necessary to begin, but will be useful when developing more complex apps.</li>
           <li>How to set up a development environment using Node and NPM</li>
-          <li>Knowledge of Git would be useful for following the tutorials on the <a href="angular.io" target="_blank" alt="">Angular main site</a>.</li>
+          <li>Knowledge of Git would be useful for following the tutorials on the <a href="https://www.angular.io" target="_blank" alt="">Angular main site</a>.</li>
+      </section>
+
+      <section class="main-section" id="setup">
+        <h3>Setting up for Angular</h3>
+        <p>It's highly recommended that you develop locally on your machine.  There are plenty of online IDEs that can give you a taste, but locally is the best way.</p>
+        <p>Make sure you have <strong>Node</strong> and <strong>npm</strong> installed. Then...</p>
+        <ol>
+          <li>Create a project folder.</li>
+          <li>Clone the QuickStart seed into your project folder.</li>
+          <li>Install the npm packages.</li>
+          <li>Run <code>npm start</code> to launch the sample application.</li>    
+        </ol>
+        <h5>How to clone the repository</h5>
+        <p>Use these terminal commands to clone the quickstart seed:</p>
+<pre><code>git clone https://github.com/angular/quickstart.git quickstart
+cd quickstart
+npm install
+npm start</code></pre>
       </section>
 
       <section class="main-section" id="basics">
@@ -53,30 +72,75 @@
 export class AppComponent { name = 'Angular'; }</code></pre>
         <p>The <em>@component</em> is a <a href="https://angular.io/docs/ts/latest/glossary.html#!#decorator" alt="link to decorator definition">decorator</a> function that essentially describes how the HTML template and component clas work together.</p>
         <p>The selector property tells Angular to display the component inside a custom <code>my-app</code> tag inside the HTML.
+<pre><code>&#060my-app&#062Loading AppComponent content here ...&#060/my-app&#062</pre></code>
       </section>
       
-      <section class="main-section" id="section-id">
-        <h3>Section Header</h3>
-        <p>Paragraph</p>
-        <code>Code sample</code>
-        <p>Paragraph</p>
-      </section>
-      
-      <section class="main-section" id="section-id">
-        <h3>Section Header</h3>
-        <p>Paragraph</p>
-        <code>Code sample</code>
-        <p>Paragraph</p>
+      <section class="main-section" id="modules">
+        <h3>Angular Modules</h3>
+        <p>Angular apps are modular and Angular has its own modularity system called Angular modules or NgModules.</p>
+        <p>Every Angular app has at least one Angular module class, the root module, conventionally named <code>AppModule</code>.</p>
+        <p>While the root module may be the only module in a small application, most apps have many more feature modules, each a cohesive block of code dedicated to an application domain, a workflow, or a closely related set of capabilities.</p>
+        <p>An Angular module, whether a root or feature, is a class with an <code>@NgModule</code> decorator.</p>
       </section>
 
-      <section class="main-section" id="section-id">
-        <h3>Section Header</h3>
-        <p>Paragraph</p>
-        <code>Code sample</code>
-        <p>Paragraph</p>
+      <section class="main-section" id="data-binding">
+        <h3>Data Binding</h3>
+        <p>Without a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.</p>
+        <p>As the diagram shows, there are four forms of data binding syntax. Each form has a direction — to the DOM, from the DOM, or in both directions.</p>
+        <img id="data-bind-img" src="https://angular.io/resources/images/devguide/architecture/databinding.png">
+      </section>
+      
+      <section class="main-section" id="libraries">
+        <h3>Angular Libraries</h3>
+        <p>Angular ships as a collection of JavaScript modules. You can think of them as library modules.</p>
+        <p>Each Angular library name begins with the @angular prefix.</p>
+        <p>You install them with the npm package manager and import parts of them with JavaScript import statements.</p>
+        <p>For example, import Angular's Component decorator from the <code>@angular/core</code> library like this:</p>
+        <code>import { Component } from '@angular/core';</code>
+        <p>You also import Angular modules from Angular libraries using JavaScript import statements:</p>
+        <code>import { BrowserModule } from '@angular/platform-browser';</code>
+      </section>
+
+      <section class="main-section" id="components">
+        <h3>Components</h3>
+        <p>A component controls a patch of screen called a <em>view</em>.</p>
+        <p>You define a component's application logic—what it does to support the view—inside a class. The class interacts with the view through an API of properties and methods.</p>
+        <p>For example, this HeroListComponent has a heroes property that returns an array of heroes that it acquires from a service. HeroListComponent also has a selectHero() method that sets a selectedHero property when the user clicks to choose a hero from that list.</p>
+<pre><code>export class HeroListComponent implements OnInit {
+  heroes: Hero[];
+  selectedHero: Hero;
+
+  constructor(private service: HeroService) { }
+
+  ngOnInit() {
+    this.heroes = this.service.getHeroes();
+  }
+
+  selectHero(hero: Hero) { this.selectedHero = hero; }
+}</code></pre>
+        <p>Angular creates, updates, and destroys components as the user moves through the application. Your app can take action at each moment in this lifecycle through optional lifecycle hooks, like <code>ngOnInit()</code> declared above.</p>
+      </section>
+
+      <section class="main-section" id="templates">
+        <h3>Templates</h3>
+        <p>You define a component's view with its companion template. A template is a form of HTML that tells Angular how to render the component.</p>
+        <p>A template looks like regular HTML, except for a few differences. Below is an example template:</p>
+<pre><code>&#060h2&#062Hero List&#060/h2&#062
+&#060p&#062&#060i&#062Pick a hero from the list&#060/i&#062&#060/p&#062
+&#060ul&#062
+  &#060li *ngFor="let hero of heroes" (click)="selectHero(hero)"&#062
+    {{hero.name}}
+  &#060/li&#062
+&#060/ul&#062
+&#060hero-detail *ngIf="selectedHero" [hero]="selectedHero"&#062&#060/hero-detail&#062</code></pre>
+        <p>Although this template uses typical HTML elements like &#060h2&#062 and &#060p&#062, it also has some differences. Code like <code>*ngFor</code>, <code>{{hero.name}}</code>
+        , <code>(click)</code>, <code>[hero]</code>, and <code>&#060hero-detail&#062</code> uses Angular's template syntax.</p>
       </section>
 
     </main>
+
+    <br>
+    <br>
 
     <p><ol>
           <li> I can see a &#60main&#62 element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
