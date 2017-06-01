@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  font-family: "Open Sans", sans-serif; }
+
+section {
+  width: 80%;
+  margin: auto; }
+
+@media only screen and (min-width: 800px) {
+  section {
+    width: 60%; } }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Angular Technical Documents</title>
+
+    <meta name="description" content="Angular 2 Technical Documentation">
+    <meta name="author" content="DB">
+
+    <link rel='stylesheet' type='text/css' href='app/css/styles.css'>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="introduction">
+        <h3>Introduction</h3>
+        <p>Angular is a Javascript framework that extends HTML in order to make creating dynamic websites quicker and easier.  The latest version is Angular 4, and is smaller and faster than it's predecessors.  Whilst the original angular was written in plain JavaScript, the following iterations use TypeScript in order to support developer productivity with tooling.  However while starting out Angular code can be written plain JavaScript.</p>
+        <p>Angular is one of the components of the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" alt="" target="_blank">MEAN stack</a> but can be used with other libraries and all the features can be modified to suit the needs of the application being developed.</p>
+      </section>
+
+      <section class="main-section" id="things-to-know">
+        <h3>Thing you should know</h3>
+        <ul>
+          <li>Before starting Angular you should have a good working knowledge of HTML and JavaScript</li>
+          <li>An understanding of the Internet and the basics of web development</li>
+          <li>Previous experience of TypeScript isn't necessary to begin, but will be useful when developing more complex apps.</li>
+          <li>How to set up a development environment using Node and NPM</li>
+          <li>Knowledge of Git would be useful for following the tutorials on the <a href="angular.io" target="_blank" alt="">Angular main site</a>.</li>
+      </section>
+
+      <section class="main-section" id="basics">
+        <h3>The Basics</h3>
+        <p>Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.</p>
+        <p>The framework consists of several libraries, sone core and some optional</p>
+        <p>Angular applications are made up of HTML templates composed with components and services. A component is a combination of an HTML template and a component class that controls a portion of the screen.  These components contain Angularized markup. Application logic is added in services and and this all gets boxed up as a module.</p>
+        <p>Below is an example component that displays a simple string</p>
+        <pre><code>import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `&#060h1&#062Hello {{name}}&#060/h1&#062`
+})
+
+export class AppComponent { name = 'Angular'; }</code></pre>
+        <p>The <em>@component</em> is a <a href="https://angular.io/docs/ts/latest/glossary.html#!#decorator" alt="link to decorator definition">decorator</a> function that essentially describes how the HTML template and component clas work together.</p>
+        <p>The selector property tells Angular to display the component inside a custom <code>my-app</code> tag inside the HTML.
+      </section>
+      
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+      
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+
+      <section class="main-section" id="section-id">
+        <h3>Section Header</h3>
+        <p>Paragraph</p>
+        <code>Code sample</code>
+        <p>Paragraph</p>
+      </section>
+
+    </main>
+
+    <p><ol>
+          <li> I can see a &#60main&#62 element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+          </li>
+    <li> Within the #main-doc ( &#60main&#62 ) element, I can see several &#60section&#62 elements, each with a class of "main-section". There should be a minimum of 5.
+    </li>
+    <li> The first element within each .main-section should be a &#60header&#62 element which contains text that describes the topic of that section.
+    </li>
+    <li> Each &#60section&#62 element with the class of "main-section" should also have an id that corresponds with the text of each &#60header&#62 contained within it. Any spaces should be replaced with underscores (e.g. The &#60section&#62 that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
+    </li>
+    <li> The .main-section elements should contain at least 10 &#60p&#62 elements total (not each).
+    </li>
+    <li> The .main-section elements should contain at least 5 &#60code&#62 elements total (not each).
+    </li>
+    <li> The .main-section elements should contain at least 5 &#60li&#62 items total (not each).
+    </li>
+    <li> I can see a &#60nav&#62 element with a corresponding id="navbar".
+    </li>
+    <li> The first element within the navbar should be a &#60header&#62 which contains text that describes the topic of the technical documentation.
+    </li>
+    <li> Additionally, the navbar should contain link (&#60a&#62) elements with the class of "nav-link". There should be one for every element with the class "main-section".
+    </li>
+    <li> Each element with the class of "nav-link" should contain text that corresponds to the &#60header&#62 text within each &#60section&#62 (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+    </li>
+    <li> When I click on a navbar element, the page should navigate to the corresponding section of the "main-doc" element (e.g. If I click on a "nav-link" element that contains the text "Hello world", the page navigates to a &#60section&#62 element that has that id and contains the corresponding &#60header&#62.
+      </li>
+    </p>
+
+
+  </body>
+</html>
